@@ -1,0 +1,18 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool"
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "moreores:pyrope"
+        }
+      ]
+    }
+  ]
+}

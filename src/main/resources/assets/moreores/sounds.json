@@ -1,0 +1,58 @@
+{
+  "taswell": {
+    "sounds": [
+      {
+        "name": "moreores:taswell",
+        "stream": true
+      }
+    ]
+  },
+  "dreiton": {
+    "sounds": [
+      {
+        "name": "moreores:dreiton",
+        "stream": true
+      }
+    ]
+  },
+  "biome_fest": {
+    "sounds": [
+      {
+        "name": "moreores:biome_fest",
+        "stream": true
+      }
+    ]
+  },
+  "aria_math": {
+    "sounds": [
+      {
+        "name": "moreores:aria_math",
+        "stream": true
+      }
+    ]
+  },
+  "infinite_amethyst": {
+    "sounds": [
+      {
+        "name": "moreores:infinite_amethyst",
+        "stream": true
+      }
+    ]
+  },
+  "endless": {
+    "sounds": [
+      {
+        "name": "moreores:endless",
+        "stream": true
+      }
+    ]
+  },
+  "featherfall": {
+    "sounds": [
+      {
+        "name": "moreores:featherfall",
+        "stream": true
+      }
+    ]
+  }
+}
