@@ -1,5 +1,6 @@
 package net.cobra.moreores.item;
 
+import net.minecraft.client.item.TooltipType;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LightningEntity;
@@ -9,9 +10,6 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.tooltip.TooltipType;
-import net.minecraft.sound.SoundCategory;
-import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
@@ -20,7 +18,7 @@ import net.minecraft.world.World;
 import java.util.List;
 
 public class EnergyIngotItem extends Item {
-    public EnergyIngotItem(Settings settings) {
+    public EnergyIngotItem(net.minecraft.item.Item.Settings settings) {
         super(settings);
     }
     @Override
@@ -53,19 +51,10 @@ public class EnergyIngotItem extends Item {
             user.addStatusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 9600, 4, false, false, false));
             user.addStatusEffect(new StatusEffectInstance(StatusEffects.SATURATION, 9600, 4, false, false, false));
             user.addStatusEffect(new StatusEffectInstance(StatusEffects.LUCK, 9600, 4, false, false, false));
-        }else if(!world.isClient() && hand == Hand.OFF_HAND) {
             EntityType<LightningEntity> lightningType = EntityType.LIGHTNING_BOLT;
             LightningEntity lightning = new LightningEntity(lightningType, world);
             lightning.setPos(user.getX(), user.getY(), user.getZ());
             world.spawnEntity(lightning);
-            user.addStatusEffect(new StatusEffectInstance(StatusEffects.POISON, 60));
-            user.addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE, 60));
-            user.clearStatusEffects();
-            world.playSound(null, user.getX(), user.getY(), user.getZ(), SoundEvents.BLOCK_BEACON_DEACTIVATE, SoundCategory.PLAYERS, 2.0f, 1.0f);
-        }
-
-        if(!world.isClient() && hand == Hand.MAIN_HAND) {
-            world.playSound(null, user.getX(), user.getY(), user.getZ(), SoundEvents.ITEM_TRIDENT_THUNDER, SoundCategory.PLAYERS, 1.0f, 1.0f);
         }
 
         return super.use(world, user, hand);

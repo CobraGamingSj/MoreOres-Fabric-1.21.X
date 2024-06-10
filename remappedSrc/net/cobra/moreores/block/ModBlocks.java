@@ -46,13 +46,13 @@ public class ModBlocks {
     //Block Registry
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
-        return Registry.register(Registries.BLOCK, Identifier.of("moreores", name), block);
+        return Registry.register(Registries.BLOCK, new Identifier("moreores", name), block);
     }
 
 
     //BlockItem Registry
     private static Item registerBlockItem(String name, Block block) {
-        return Registry.register(Registries.ITEM, Identifier.of("moreores", name), new BlockItem(block, new Item.Settings()));
+        return Registry.register(Registries.ITEM, new Identifier("moreores", name), new BlockItem(block, new Item.Settings()));
     }
 
     public static void registerBlocks() {

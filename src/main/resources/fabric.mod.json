@@ -3,7 +3,7 @@
 	"id": "moreores",
 	"version": "${version}",
 	"name": "MoreOres+",
-	"description": "This is a Fabric Mod which runs only on Minecraft Fabric 1.20.6 and above.",
+	"description": "This is a Fabric Mod which runs on Minecraft Fabric 1.20.6 and above.",
 	"authors": [
 		"CobraGamingSJ"
 	],
@@ -30,7 +30,7 @@
 	],
 	"depends": {
 		"fabricloader": ">=0.15.11",
-		"minecraft": "~1.20.6",
+		"minecraft": "~1.21-",
 		"java": ">=21",
 		"fabric-api": "*"
 	},

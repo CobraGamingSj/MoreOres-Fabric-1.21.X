@@ -1,7 +1,10 @@
 package net.cobra.moreores.item;
 
 import net.cobra.moreores.sound.ModSounds;
-import net.minecraft.item.*;
+import net.minecraft.item.ArmorItem;
+import net.minecraft.item.ArmorMaterials;
+import net.minecraft.item.Item;
+import net.minecraft.item.MusicDiscItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -35,27 +38,22 @@ public class ModItems {
 
 
     //Music Discs
-//    public static final Item TASWELL = registerItem("taswell", new MusicDiscItem(new Item.Settings()));
-//    public static final Item DREITON = registerItem("dreiton", new MusicDiscItem(new Item.Settings()));
-//    public static final Item BIOME_FEST = registerItem("biome_fest", new MusicDiscItem(new Item.Settings()));
-//    public static final Item ARIA_MATH = registerItem("aria_math", new MusicDiscItem(new Item.Settings()));
-//    public static final Item INFINITE_AMETHYST = registerItem("infinite_amethyst", new MusicDiscItem(new Item.Settings()));
-//    public static final Item ENDLESS = registerItem("endless", new MusicDiscItem(new Item.Settings()));
-//    public static final Item FEATHERFALL = registerItem("featherfall", new MusicDiscItem(new Item.Settings()));
+    public static final Item TASWELL = registerItem("taswell", new MusicDiscItem(7, ModSounds.TASWELL, new Item.Settings(), 514));
+    public static final Item DREITON = registerItem("dreiton", new MusicDiscItem(7, ModSounds.DREITON, new Item.Settings(), 497));
+    public static final Item BIOME_FEST = registerItem("biome_fest", new MusicDiscItem(7, ModSounds.BIOME_FEST, new Item.Settings(), 377));
+    public static final Item ARIA_MATH = registerItem("aria_math", new MusicDiscItem(7, ModSounds.ARIA_MATH, new Item.Settings(), 309));
+    public static final Item INFINITE_AMETHYST = registerItem("infinite_amethyst", new MusicDiscItem(7, ModSounds.INFINITE_AMETHYST, new Item.Settings(), 271));
+    public static final Item ENDLESS = registerItem("endless", new MusicDiscItem(7, ModSounds.ENDLESS, new Item.Settings(), 403));
+    public static final Item FEATHERFALL = registerItem("featherfall", new MusicDiscItem(7, ModSounds.FEATHERFALL, new Item.Settings(), 344));
 
-    public static final Item RUBY_SWORD = registerItem("ruby_sword", new SwordItem(ModToolMaterials.RUBY, new Item.Settings().fireproof().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.RUBY, 6, -2.1f))));
-    public static final Item RUBY_PICKAXE = registerItem("ruby_pickaxe", new PickaxeItem(ModToolMaterials.RUBY, new Item.Settings().fireproof().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.RUBY, 2, -3.0f))));
-    public static final Item RUBY_SHOVEL = registerItem("ruby_shovel", new ShovelItem(ModToolMaterials.RUBY, new Item.Settings().fireproof().attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.RUBY, 2.5F, -3.0F))));
-    public static final Item RUBY_AXE = registerItem("ruby_axe", new AxeItem(ModToolMaterials.RUBY, new Item.Settings().fireproof().attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.RUBY, 6.0F, -2.1F))));
-    public static final Item RUBY_HOE = registerItem("ruby_hoe", new HoeItem(ModToolMaterials.RUBY, new Item.Settings().fireproof().attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.RUBY, -5.0F, -4.0F))));
 
     //Smithing
     public static final Item SMITHING_TEMPLATE = registerItem("smithing_template", new Item(new Item.Settings()));
 
 
-    //Items Registry
+    //Item Registry
     private static Item registerItem(String name, Item item) {
-        return Registry.register(Registries.ITEM, Identifier.of("moreores", name), item);
+        return Registry.register(Registries.ITEM, new Identifier("moreores", name), item);
     }
 
 

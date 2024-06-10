@@ -6,7 +6,7 @@ import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.Identifier;
 
 public class ModSounds {
-    
+
     public static final SoundEvent TASWELL = registerSoundEvent("taswell");
     public static final SoundEvent DREITON = registerSoundEvent("dreiton");
     public static final SoundEvent BIOME_FEST = registerSoundEvent("biome_fest");
@@ -16,7 +16,7 @@ public class ModSounds {
     public static final SoundEvent FEATHERFALL = registerSoundEvent("featherfall");
 
     private static SoundEvent registerSoundEvent(String name) {
-        Identifier id = Identifier.of("moreores", name);
+        Identifier id = new Identifier("moreores", name);
         return Registry.register(Registries.SOUND_EVENT, id, SoundEvent.of(id));
     }
 

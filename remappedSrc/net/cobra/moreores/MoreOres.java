@@ -1,6 +1,5 @@
 package net.cobra.moreores;
 
-import net.cobra.moreores.sound.ModSounds;
 import net.fabricmc.api.ModInitializer;
 import net.cobra.moreores.block.ModBlocks;
 import net.cobra.moreores.item.ModItems;
@@ -37,7 +36,7 @@ public class MoreOres implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		//Gemstones Item Group Registry
-		Registry.register(Registries.ITEM_GROUP, Identifier.of("moreores", "gemstones"), GEMSTONES);
+		Registry.register(Registries.ITEM_GROUP, new Identifier("moreores", "gemstones"), GEMSTONES);
 
 
 		//Fuel Registry
@@ -64,25 +63,16 @@ public class MoreOres implements ModInitializer {
 
 		//Tools & Music Discs Registry
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(tools -> {
-//			tools.addAfter(Items.MUSIC_DISC_OTHERSIDE, ModItems.ARIA_MATH);
-//			tools.addAfter(ModItems.ARIA_MATH, ModItems.BIOME_FEST);
-//			tools.addAfter(ModItems.BIOME_FEST, ModItems.DREITON);
-//			tools.addAfter(ModItems.DREITON, ModItems.ENDLESS);
-//			tools.addAfter(ModItems.ENDLESS, ModItems.FEATHERFALL);
-//			tools.addAfter(ModItems.FEATHERFALL, ModItems.INFINITE_AMETHYST);
-//			tools.addAfter(ModItems.INFINITE_AMETHYST, ModItems.TASWELL);
-			tools.addAfter(Items.NETHERITE_AXE, ModItems.RUBY_PICKAXE);
-			tools.addAfter(ModItems.RUBY_PICKAXE, ModItems.RUBY_SHOVEL);
-			tools.addAfter(ModItems.RUBY_SHOVEL, ModItems.RUBY_AXE);
-			tools.addAfter(ModItems.RUBY_AXE, ModItems.RUBY_HOE);
+			tools.addAfter(Items.MUSIC_DISC_OTHERSIDE, ModItems.ARIA_MATH);
+			tools.addAfter(ModItems.ARIA_MATH, ModItems.BIOME_FEST);
+			tools.addAfter(ModItems.BIOME_FEST, ModItems.DREITON);
+			tools.addAfter(ModItems.DREITON, ModItems.ENDLESS);
+			tools.addAfter(ModItems.ENDLESS, ModItems.FEATHERFALL);
+			tools.addAfter(ModItems.FEATHERFALL, ModItems.INFINITE_AMETHYST);
+			tools.addAfter(ModItems.INFINITE_AMETHYST, ModItems.TASWELL);
 		});
-		
-//		Weapons & Armors Registry
-		ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(combat -> {
-			combat.addAfter(Items.NETHERITE_SWORD, ModItems.RUBY_SWORD);
-			combat.addAfter(Items.NETHERITE_AXE, ModItems.RUBY_AXE);
-		});
-		
+
+
 		//Ores Registry
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(Ores -> {
 			Ores.addAfter(Blocks.DEEPSLATE_DIAMOND_ORE, ModBlocks.RUBY_ORE);
@@ -101,14 +91,8 @@ public class MoreOres implements ModInitializer {
 		//Functional Block Registry
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(FunctionalBlocks -> {
 			FunctionalBlocks.addAfter(Blocks.BLAST_FURNACE, ModBlocks.ENERGY_BLOCK);
-			FunctionalBlocks.addAfter(Blocks.REDSTONE_LAMP, ModBlocks.RUBY_LAMP);
 		});
 
-
-//		Redstone Block Registry
-		ItemGroupEvents.modifyEntriesEvent(ItemGroups.REDSTONE).register(redstone -> {
-			redstone.addAfter(Blocks.REDSTONE_LAMP, ModBlocks.RUBY_LAMP);
-		});
 
 		//Food Registry
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(Foods -> {
@@ -141,9 +125,5 @@ public class MoreOres implements ModInitializer {
 
 		//ModBlocks Class Registry
 		ModBlocks.registerBlocks();
-
-
-//		ModSounds Class Registry
-		ModSounds.registerSounds();
 	}
 }
