@@ -10,7 +10,6 @@ import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.registry.tag.BlockTags;
-import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.registry.tag.TagKey;
 
 public enum ModToolMaterials implements ToolMaterial
@@ -20,7 +19,13 @@ public enum ModToolMaterials implements ToolMaterial
     SAPPHIRE(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 3021, 16f, 10.0f, 16, () ->
             Ingredient.ofItems(ModItems.SAPPHIRE)),
     GREEN_GARNET(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 3723, 18f, 12.0f, 17, () ->
-            Ingredient.ofItems(ModItems.GREEN_SAPPHIRE));
+            Ingredient.ofItems(ModItems.GREEN_SAPPHIRE)),
+    PYROPE(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 4609, 22.0f, 15.0f, 26, () ->
+            Ingredient.ofItems(ModItems.PYROPE)),
+    RADIANT(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 5031, 25.0f, 20.0f, 30, () ->
+            Ingredient.ofItems(ModItems.RADIANT)),
+    AMETHYST(BlockTags.INCORRECT_FOR_IRON_TOOL, 301, 7.5f, 3.5f, 14, () ->
+            Ingredient.ofItems(Items.AMETHYST_SHARD));
 
     private final TagKey<Block> inverseTag;
     private final int itemDurability;

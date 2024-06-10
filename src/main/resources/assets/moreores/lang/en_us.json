@@ -67,6 +67,7 @@
   "item.moreores.endless.desc": "Lena Raine - Endless",
   "item.moreores.featherfall.desc": "Lena Raine - Featherfall",
 
-  "tooltip.moreores.radioactive_ingot.tooltip": "Right Click for Powerful Effects!",
+  "tooltip.moreores.radioactive_ingot.tooltip": "Right Click to get Powerful Effects. Press Shift know more!",
+  "tooltip.moreores.energy_ingot.tooltip": "Press Control Key to remove effects",
   "tooltip.moreores.energy_block": "This block kills you when you step on it!"
 }

@@ -1,5 +1,6 @@
 package net.cobra.moreores.item;
 
+import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LightningEntity;
@@ -13,6 +14,7 @@ import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
+import net.minecraft.util.Formatting;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
@@ -37,14 +39,6 @@ public class EnergyIngotItem extends Item {
 
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
-        Entity targetEntity = getTargetEntity(user);
-
-        if (targetEntity != null) {
-            EntityType<LightningEntity> lightningType = EntityType.LIGHTNING_BOLT;
-            LightningEntity lightning = new LightningEntity(lightningType, world);
-            lightning.setPos(targetEntity.getX(), targetEntity.getY(), targetEntity.getZ());
-            world.spawnEntity(lightning);
-        }
 
         if (!world.isClient() && hand == Hand.MAIN_HAND) {
             user.addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_HEALTH, 9600, 4, false, false, false));
@@ -53,7 +47,7 @@ public class EnergyIngotItem extends Item {
             user.addStatusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 9600, 4, false, false, false));
             user.addStatusEffect(new StatusEffectInstance(StatusEffects.SATURATION, 9600, 4, false, false, false));
             user.addStatusEffect(new StatusEffectInstance(StatusEffects.LUCK, 9600, 4, false, false, false));
-        }else if(!world.isClient() && hand == Hand.OFF_HAND) {
+        }else if(!world.isClient() && hand == Hand.OFF_HAND && Screen.hasControlDown()) {
             EntityType<LightningEntity> lightningType = EntityType.LIGHTNING_BOLT;
             LightningEntity lightning = new LightningEntity(lightningType, world);
             lightning.setPos(user.getX(), user.getY(), user.getZ());
@@ -71,14 +65,12 @@ public class EnergyIngotItem extends Item {
         return super.use(world, user, hand);
     }
 
-    private Entity getTargetEntity(PlayerEntity player) {
-
-        return null;
-    }
-
     @Override
     public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
-        tooltip.add(Text.translatable("tooltip.moreores.radioactive_ingot.tooltip"));
+        tooltip.add(Text.translatable("tooltip.moreores.radioactive_ingot.tooltip").formatted(Formatting.DARK_GREEN));
+        if (Screen.hasShiftDown()) {
+            tooltip.add(Text.translatable("tooltip.moreores.energy_ingot.tooltip").formatted(Formatting.DARK_RED));
+        }
         super.appendTooltip(stack, context, tooltip, type);
     }
 }
