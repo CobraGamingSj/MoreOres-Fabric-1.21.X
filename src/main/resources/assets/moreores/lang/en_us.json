@@ -55,22 +55,28 @@
 
   "itemGroup.moreores.gemstones": "Gemstones",
 
-  "item.moreores.taswell": "Music Disc",
-  "item.moreores.dreiton": "Music Disc",
-  "item.moreores.biome_fest": "Music Disc",
-  "item.moreores.aria_math": "Music Disc",
-  "item.moreores.infinite_amethyst": "Music Disc",
-  "item.moreores.endless": "Music Disc",
-  "item.moreores.featherfall": "Music Disc",
-  "item.moreores.taswell.desc": "C418 - Taswell",
-  "item.moreores.dreiton.desc": "C418 - Dreiton",
-  "item.moreores.biome_fest.desc": "C418 - Biome Fest",
-  "item.moreores.aria_math.desc": "C418 - Aria Math",
-  "item.moreores.infinite_amethyst.desc": "Lena Raine - Infinite Amethyst",
-  "item.moreores.endless.desc": "Lena Raine - Endless",
-  "item.moreores.featherfall.desc": "Lena Raine - Featherfall",
+  "item.moreores.music_disc_taswell": "Music Disc",
+  "item.moreores.music_disc_dreiton": "Music Disc",
+  "item.moreores.music_disc_biome_fest": "Music Disc",
+  "item.moreores.music_disc_aria_math": "Music Disc",
+  "item.moreores.music_disc_infinite_amethyst": "Music Disc",
+  "item.moreores.music_disc_endless": "Music Disc",
+  "item.moreores.music_disc_featherfall": "Music Disc",
+  "item.moreores.music_disc_taswell.desc": "C418 - Taswell",
+  "item.moreores.music_disc_dreiton.desc": "C418 - Dreiton",
+  "item.moreores.music_disc_biome_fest.desc": "C418 - Biome Fest",
+  "jukebox_song.moreores.music_disc_aria_math": "C418 - Aria Math",
+  "item.moreores.music_disc_infinite_amethyst.desc": "Lena Raine - Infinite Amethyst",
+  "item.moreores.music_disc_endless.desc": "Lena Raine - Endless",
+  "item.moreores.music_disc_featherfall.desc": "Lena Raine - Featherfall",
 
   "tooltip.moreores.radioactive_ingot.tooltip": "Right Click to get Powerful Effects. Press Shift know more!",
   "tooltip.moreores.energy_ingot.tooltip": "Press Control Key to remove effects",
-  "tooltip.moreores.energy_block": "This block kills you when you step on it!"
+  "tooltip.moreores.energy_block": "This block kills you when you step on it!",
+
+  "upgrade.moreores.ruby_upgrade": "Ruby Upgrade",
+  "item.moreores.smithing_template.applies_to": "Applies to",
+  "item.moreores.smithing_template.ruby_upgrade.applies_to": "Netherite Equipment",
+  "item.moreores.smithing_template.ingredients": "Ingredients",
+  "item.moreores.smithing_template.ruby_upgrade.ingredients": "Ruby"
 }

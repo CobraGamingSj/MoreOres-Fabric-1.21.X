@@ -67,7 +67,7 @@ public class EnergyIngotItem extends Item {
 
     @Override
     public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
-        tooltip.add(Text.translatable("tooltip.moreores.radioactive_ingot.tooltip").formatted(Formatting.WHITE));
+        tooltip.add(Text.translatable("tooltip.moreores.radioactive_ingot.tooltip").formatted(Formatting.GRAY));
         if (Screen.hasShiftDown()) {
             tooltip.add(Text.translatable("tooltip.moreores.energy_ingot.tooltip").formatted(Formatting.DARK_RED));
         }

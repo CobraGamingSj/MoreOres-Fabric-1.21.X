@@ -66,13 +66,13 @@ public class MoreOres implements ModInitializer {
 
 		//Tools & Music Discs Registry
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(tools -> {
-//			tools.addAfter(Items.MUSIC_DISC_OTHERSIDE, ModItems.ARIA_MATH);
-//			tools.addAfter(ModItems.ARIA_MATH, ModItems.BIOME_FEST);
-//			tools.addAfter(ModItems.BIOME_FEST, ModItems.DREITON);
-//			tools.addAfter(ModItems.DREITON, ModItems.ENDLESS);
-//			tools.addAfter(ModItems.ENDLESS, ModItems.FEATHERFALL);
-//			tools.addAfter(ModItems.FEATHERFALL, ModItems.INFINITE_AMETHYST);
-//			tools.addAfter(ModItems.INFINITE_AMETHYST, ModItems.TASWELL);
+			tools.addAfter(Items.MUSIC_DISC_OTHERSIDE, ModItems.MUSIC_DISC_ARIA_MATH);
+			tools.addAfter(ModItems.MUSIC_DISC_ARIA_MATH, ModItems.MUSIC_DISC_BIOME_FEST);
+			tools.addAfter(ModItems.MUSIC_DISC_BIOME_FEST, ModItems.MUSIC_DISC_DREITON);
+			tools.addAfter(ModItems.MUSIC_DISC_DREITON, ModItems.MUSIC_DISC_ENDLESS);
+			tools.addAfter(ModItems.MUSIC_DISC_ENDLESS, ModItems.MUSIC_DISC_FEATHERFALL);
+			tools.addAfter(ModItems.MUSIC_DISC_FEATHERFALL, ModItems.MUSIC_DISC_INFINITE_AMETHYST);
+			tools.addAfter(ModItems.MUSIC_DISC_INFINITE_AMETHYST, ModItems.MUSIC_DISC_TASWELL);
 			tools.addAfter(Items.NETHERITE_HOE, ModItems.RUBY_SHOVEL);
 			tools.addAfter(ModItems.RUBY_SHOVEL, ModItems.RUBY_PICKAXE);
 			tools.addAfter(ModItems.RUBY_PICKAXE, ModItems.RUBY_AXE);

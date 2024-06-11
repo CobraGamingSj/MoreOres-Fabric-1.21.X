@@ -1,5 +1,7 @@
 package net.cobra.moreores.item;
 
+import net.cobra.moreores.block.jukebox.ModJukeboxSongs;
+import net.cobra.moreores.sound.ModSounds;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -35,13 +37,13 @@ public class ModItems {
 
 
     //Music Discs
-//    public static final Item TASWELL = ModItems.registerItem("taswell", new MusicDiscItem(new Item.Settings()));
-//    public static final Item DREITON = ModItems.registerItem("dreiton", new MusicDiscItem(new Item.Settings()));
-//    public static final Item BIOME_FEST = ModItems.registerItem("biome_fest", new MusicDiscItem(new Item.Settings()));
-//    public static final Item ARIA_MATH = ModItems.registerItem("aria_math", new MusicDiscItem(new Item.Settings()));
-//    public static final Item INFINITE_AMETHYST = ModItems.registerItem("infinite_amethyst", new MusicDiscItem(new Item.Settings()));
-//    public static final Item ENDLESS = ModItems.registerItem("endless", new MusicDiscItem(new Item.Settings()));
-//    public static final Item FEATHERFALL = ModItems.registerItem("featherfall", new MusicDiscItem(new Item.Settings()));
+    public static final Item MUSIC_DISC_TASWELL = ModItems.registerItem("music_disc_taswell", new Item(new Item.Settings().jukeboxPlayable(ModJukeboxSongs.TASWELL)));
+    public static final Item MUSIC_DISC_DREITON = ModItems.registerItem("music_disc_dreiton", new Item(new Item.Settings().jukeboxPlayable(ModJukeboxSongs.DREITON)));
+    public static final Item MUSIC_DISC_BIOME_FEST = ModItems.registerItem("music_disc_biome_fest", new Item(new Item.Settings().jukeboxPlayable(ModJukeboxSongs.BIOME_FEST)));
+    public static final Item MUSIC_DISC_ARIA_MATH = ModItems.registerItem("music_disc_aria_math", new Item(new Item.Settings().jukeboxPlayable(ModJukeboxSongs.ARIA_MATH)));
+    public static final Item MUSIC_DISC_INFINITE_AMETHYST = ModItems.registerItem("music_disc_infinite_amethyst", new Item(new Item.Settings().jukeboxPlayable(ModJukeboxSongs.INFINITE_AMETHYST)));
+    public static final Item MUSIC_DISC_ENDLESS = ModItems.registerItem("music_disc_endless", new Item(new Item.Settings().jukeboxPlayable(ModJukeboxSongs.ENDLESS)));
+    public static final Item MUSIC_DISC_FEATHERFALL = ModItems.registerItem("music_disc_featherfall", new Item(new Item.Settings().jukeboxPlayable(ModJukeboxSongs.FEATHERFALL)));
 
 
 //  Ruby Tools & Weapons
@@ -52,7 +54,7 @@ public class ModItems {
     public static final Item RUBY_HOE = ModItems.registerItem("ruby_hoe", new HoeItem(ModToolMaterials.RUBY, new Item.Settings().fireproof().attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.RUBY, -5.0F, 4.0F))));
 
     //Smithing
-    public static final Item SMITHING_TEMPLATE = ModItems.registerItem("smithing_template", new Item(new Item.Settings()));
+    public static final Item SMITHING_TEMPLATE = ModItems.registerItem("smithing_template", RubyUpgradeSmithingTemplate.createRubyUpgrade());
 
 
     //Items Registry
