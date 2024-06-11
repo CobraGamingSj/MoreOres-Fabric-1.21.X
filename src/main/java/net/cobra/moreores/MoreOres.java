@@ -27,6 +27,7 @@ public class MoreOres implements ModInitializer {
 				gemstones.add(ModItems.GREEN_SAPPHIRE);
 				gemstones.add(ModItems.BLUE_GARNET);
 				gemstones.add(ModItems.PINK_GARNET);
+				gemstones.add(ModItems.GREEN_GARNET);
 				gemstones.add(ModItems.TOPAZ);
 				gemstones.add(ModItems.PERIDOT);
 				gemstones.add(ModItems.WHITE_TOPAZ);
@@ -54,7 +55,8 @@ public class MoreOres implements ModInitializer {
 			items.addAfter(ModItems.SAPPHIRE, ModItems.GREEN_SAPPHIRE);
 			items.addAfter(ModItems.GREEN_SAPPHIRE, ModItems.BLUE_GARNET);
 			items.addAfter(ModItems.BLUE_GARNET, ModItems.PINK_GARNET);
-			items.addAfter(ModItems.PINK_GARNET, ModItems.TOPAZ);
+			items.addAfter(ModItems.PINK_GARNET, ModItems.GREEN_GARNET);
+			items.addAfter(ModItems.GREEN_GARNET, ModItems.TOPAZ);
 			items.addAfter(ModItems.TOPAZ, ModItems.PERIDOT);
 			items.addAfter(ModItems.PERIDOT, ModItems.WHITE_TOPAZ);
 			items.addAfter(ModItems.WHITE_TOPAZ, ModItems.PYROPE);
@@ -71,9 +73,9 @@ public class MoreOres implements ModInitializer {
 //			tools.addAfter(ModItems.ENDLESS, ModItems.FEATHERFALL);
 //			tools.addAfter(ModItems.FEATHERFALL, ModItems.INFINITE_AMETHYST);
 //			tools.addAfter(ModItems.INFINITE_AMETHYST, ModItems.TASWELL);
-			tools.addAfter(Items.NETHERITE_AXE, ModItems.RUBY_PICKAXE);
-			tools.addAfter(ModItems.RUBY_PICKAXE, ModItems.RUBY_SHOVEL);
-			tools.addAfter(ModItems.RUBY_SHOVEL, ModItems.RUBY_AXE);
+			tools.addAfter(Items.NETHERITE_HOE, ModItems.RUBY_SHOVEL);
+			tools.addAfter(ModItems.RUBY_SHOVEL, ModItems.RUBY_PICKAXE);
+			tools.addAfter(ModItems.RUBY_PICKAXE, ModItems.RUBY_AXE);
 			tools.addAfter(ModItems.RUBY_AXE, ModItems.RUBY_HOE);
 		});
 		
@@ -90,7 +92,8 @@ public class MoreOres implements ModInitializer {
 			Ores.addAfter(ModBlocks.SAPPHIRE_ORE, ModBlocks.GREEN_SAPPHIRE_ORE);
 			Ores.addAfter(ModBlocks.GREEN_SAPPHIRE_ORE, ModBlocks.BLUE_GARNET_ORE);
 			Ores.addAfter(ModBlocks.BLUE_GARNET_ORE, ModBlocks.PINK_GARNET_ORE);
-			Ores.addAfter(ModBlocks.PINK_GARNET_ORE, ModBlocks.TOPAZ_ORE);
+			Ores.addAfter(ModBlocks.PINK_GARNET_ORE, ModBlocks.GREEN_GARNET_ORE);
+			Ores.addAfter(ModBlocks.GREEN_GARNET_ORE, ModBlocks.TOPAZ_ORE);
 			Ores.addAfter(ModBlocks.TOPAZ_ORE, ModBlocks.PERIDOT_ORE);
 			Ores.addAfter(ModBlocks.PERIDOT_ORE, ModBlocks.WHITE_TOPAZ_ORE);
 			Ores.addAfter(ModBlocks.WHITE_TOPAZ_ORE, ModBlocks.PYROPE_ORE);
@@ -126,8 +129,9 @@ public class MoreOres implements ModInitializer {
 			blocks.addAfter(ModBlocks.RADIANT_BLOCK, ModBlocks.SAPPHIRE_BLOCK);
 			blocks.addAfter(ModBlocks.SAPPHIRE_BLOCK, ModBlocks.GREEN_SAPHIRE_BLOCK);
 			blocks.addAfter(ModBlocks.GREEN_SAPHIRE_BLOCK, ModBlocks.BLUE_GARNET_BLOCK);
-			blocks.addAfter(ModBlocks.BLUE_GARNET_BLOCK, ModBlocks.PINk_GARNET_BLOCK);
-			blocks.addAfter(ModBlocks.PINk_GARNET_BLOCK, ModBlocks.TOPAZ_BLOCK);
+			blocks.addAfter(ModBlocks.BLUE_GARNET_BLOCK, ModBlocks.PINK_GARNET_BLOCK);
+			blocks.addAfter(ModBlocks.PINK_GARNET_BLOCK, ModBlocks.GREEN_GARNET_BLOCK);
+			blocks.addAfter(ModBlocks.GREEN_GARNET_BLOCK, ModBlocks.TOPAZ_BLOCK);
 			blocks.addAfter(ModBlocks.TOPAZ_BLOCK, ModBlocks.PERIDOT_BLOCK);
 			blocks.addAfter(ModBlocks.PERIDOT_BLOCK, ModBlocks.WHITE_TOPAZ_BLOCK);
 			blocks.addAfter(ModBlocks.WHITE_TOPAZ_BLOCK, ModBlocks.PYROPE_BLOCK);
