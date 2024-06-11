@@ -1,6 +1,5 @@
 package net.cobra.moreores.block;
 
-import net.architect.block.RubyLamp;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.ExperienceDroppingBlock;

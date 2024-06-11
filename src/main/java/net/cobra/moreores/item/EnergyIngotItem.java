@@ -59,7 +59,7 @@ public class EnergyIngotItem extends Item {
         }
 
         if(!world.isClient() && hand == Hand.MAIN_HAND) {
-            world.playSound(null, user.getX(), user.getY(), user.getZ(), SoundEvents.ITEM_TRIDENT_THUNDER, SoundCategory.PLAYERS, 1.0f, 1.0f);
+            world.playSound(null, user.getX(), user.getY(), user.getZ(), SoundEvents.BLOCK_BEACON_ACTIVATE, SoundCategory.PLAYERS, 1.0f, 1.0f);
         }
 
         return super.use(world, user, hand);
