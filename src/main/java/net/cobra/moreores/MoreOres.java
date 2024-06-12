@@ -47,6 +47,7 @@ public class MoreOres implements ModInitializer {
 
 		//Gemstones & Ingots Registry
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(items -> {
+			items.addAfter(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE, ModItems.RUBY_UPGRADE_SMITHING_TEMPLATE);
 			items.addBefore(Items.NETHERITE_INGOT, ModItems.ENERGY_INGOT);
 			items.addBefore(Items.COAL, ModItems.WOOD_PELLET);
 			items.addAfter(Items.NETHERITE_INGOT, ModItems.RADIANT);

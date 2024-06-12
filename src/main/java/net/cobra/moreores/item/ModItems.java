@@ -1,7 +1,6 @@
 package net.cobra.moreores.item;
 
 import net.cobra.moreores.block.jukebox.ModJukeboxSongs;
-import net.cobra.moreores.sound.ModSounds;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -51,10 +50,10 @@ public class ModItems {
     public static final Item RUBY_PICKAXE = ModItems.registerItem("ruby_pickaxe", new PickaxeItem(ModToolMaterials.RUBY, new Item.Settings().fireproof().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.RUBY, 2, -3.0f))));
     public static final Item RUBY_SHOVEL = ModItems.registerItem("ruby_shovel", new ShovelItem(ModToolMaterials.RUBY, new Item.Settings().fireproof().attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.RUBY, 2.5F, -3.0F))));
     public static final Item RUBY_AXE = ModItems.registerItem("ruby_axe", new AxeItem(ModToolMaterials.RUBY, new Item.Settings().fireproof().attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.RUBY, 6.0F, -2.1F))));
-    public static final Item RUBY_HOE = ModItems.registerItem("ruby_hoe", new HoeItem(ModToolMaterials.RUBY, new Item.Settings().fireproof().attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.RUBY, -5.0F, 4.0F))));
+    public static final Item RUBY_HOE = ModItems.registerItem("ruby_hoe", new HoeItem(ModToolMaterials.RUBY, new Item.Settings().fireproof().attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.RUBY, -5.0F, 0.0F))));
 
     //Smithing
-    public static final Item SMITHING_TEMPLATE = ModItems.registerItem("smithing_template", RubyUpgradeSmithingTemplate.createRubyUpgrade());
+    public static final Item RUBY_UPGRADE_SMITHING_TEMPLATE = ModItems.registerItem("ruby_upgrade_smithing_template", RubyUpgradeSmithingTemplate.createRubyUpgrade());
 
 
     //Items Registry
