@@ -1,56 +1,56 @@
 {
-  "taswell": {
+  "moreores:music_disc.taswell": {
     "sounds": [
       {
-        "name": "moreores:taswell",
+        "name": "moreores:sounds/taswell",
         "stream": true
       }
     ]
   },
-  "dreiton": {
+  "moreores:music_disc.dreiton": {
     "sounds": [
       {
-        "name": "moreores:dreiton",
+        "name": "moreores:sounds/dreiton",
         "stream": true
       }
     ]
   },
-  "biome_fest": {
+  "moreores:music_disc.biome_fest": {
     "sounds": [
       {
-        "name": "moreores:biome_fest",
+        "name": "moreores:sounds/biome_fest",
         "stream": true
       }
     ]
   },
-  "aria_math": {
+  "moreores:music_disc.aria_math": {
     "sounds": [
       {
-        "name": "moreores:aria_math",
+        "name": "moreores:sounds/aria_math",
         "stream": true
       }
     ]
   },
-  "infinite_amethyst": {
+  "moreores:music_disc.infinite_amethyst": {
     "sounds": [
       {
-        "name": "moreores:infinite_amethyst",
+        "name": "moreores:sounds/infinite_amethyst",
         "stream": true
       }
     ]
   },
-  "endless": {
+  "moreores:music_disc.endless": {
     "sounds": [
       {
-        "name": "moreores:endless",
+        "name": "moreores:sounds/endless",
         "stream": true
       }
     ]
   },
-  "featherfall": {
+  "moreores:music_disc.featherfall": {
     "sounds": [
       {
-        "name": "moreores:featherfall",
+        "name": "moreores:sounds/featherfall",
         "stream": true
       }
     ]

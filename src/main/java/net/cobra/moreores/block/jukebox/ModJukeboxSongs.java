@@ -40,7 +40,7 @@ public interface ModJukeboxSongs extends JukeboxSongs{
         ModJukeboxSongs.register(registry, ARIA_MATH, ModSounds.MUSIC_DISC_ARIA_MATH, 309, 4);
         ModJukeboxSongs.register(registry, INFINITE_AMETHYST, ModSounds.MUSIC_DISC_INFINITE_AMETHYST, 174, 5);
         ModJukeboxSongs.register(registry, ENDLESS, ModSounds.MUSIC_DISC_ENDLESS, 197, 6);
-        ModJukeboxSongs.register(registry, FEATHERFALL, ModSounds.MUSIC_DISC_FEATHERFALL, 96, 7);
+        ModJukeboxSongs.register(registry, FEATHERFALL, ModSounds.MUSIC_DISC_FEATHERFALL, 301, 7);
     }
 }
 
