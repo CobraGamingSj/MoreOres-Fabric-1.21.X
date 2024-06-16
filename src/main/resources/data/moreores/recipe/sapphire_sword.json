@@ -1,20 +1,20 @@
 {
     "type": "minecraft:crafting_shaped",
+    "category": "equipment",
     "pattern": [
-        " d ",
-        " d ",
-        " s "
+        "a",
+        "a",
+        "b"
     ],
     "key": {
-        "d": {
+        "a": {
             "item": "moreores:sapphire"
         },
-        "s": {
+        "b": {
             "item": "minecraft:stick"
         }
     },
     "result": {
-        "item": "moreores:sapphire_sword",
-        "count": 0
+        "id": "moreores:sapphire_sword"
     }
 }
