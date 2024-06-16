@@ -62,6 +62,10 @@ public class ModItems {
     public static final Item SAPPHIRE_SHOVEL = ModItems.registerItem("sapphire_shovel", new ShovelItem(ModToolMaterials.SAPPHIRE, new Item.Settings().fireproof().attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.SAPPHIRE, 3.5F, -3.0F))));
 
 
+//    Radiant Tools & Weapons
+    public static final Item RADIANT_SWORD = ModItems.registerItem("radiant_sword", new SwordItem(ModToolMaterials.RADIANT, new Item.Settings().fireproof().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.RADIANT, 32, -1.0f))));
+
+
 //    Smithing
     public static final Item RUBY_UPGRADE_SMITHING_TEMPLATE = ModItems.registerItem("ruby_upgrade_smithing_template", RubyUpgradeSmithingTemplate.createRubyUpgrade());
 

@@ -87,6 +87,7 @@ public class MoreOres implements ModInitializer {
 			combat.addAfter(Items.NETHERITE_AXE, ModItems.RUBY_AXE);
 			combat.addAfter(ModItems.RUBY_AXE, ModItems.SAPPHIRE_AXE);
 			combat.addAfter(ModItems.RUBY_SWORD, ModItems.SAPPHIRE_SWORD);
+			combat.addAfter(ModItems.RUBY_SWORD, ModItems.RADIANT_SWORD);
 		});
 
 		// Ores Registry

@@ -22,5 +22,5 @@ public class ModFoods {
             .statusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 200, 4), 1f)
             .statusEffect(new StatusEffectInstance(StatusEffects.LUCK, 200, 4), 1f)
             .statusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 200, 4), 1f)
-            .statusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 200, 4), 1f).build();
+            .statusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 200, 4), 1f).alwaysEdible().build();
 }
