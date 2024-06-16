@@ -12,6 +12,7 @@
   "item.moreores.white_topaz": "White Topaz",
   "item.moreores.pyrope": "Pyrope",
   "item.moreores.jade": "Jade",
+  "item.moreores.tomato_seeds": "Tomato Seeds",
 
   "item.moreores.pineapple": "Pineapple",
   "item.moreores.tomato": "Tomato",
@@ -50,6 +51,11 @@
   "item.moreores.ruby_hoe": "Ruby Hoe",
   "item.moreores.ruby_shovel": "Ruby Shovel",
   "item.moreores.ruby_axe": "Ruby Axe",
+  "item.moreores.sapphire_sword": "Sapphire Sword",
+  "item.moreores.sapphire_pickaxe": "Sapphire Pickaxe",
+  "item.moreores.sapphire_axe": "Sapphire Axe",
+  "item.moreores.sapphire_hoe": "Sapphire Hoe",
+  "item.moreores.sapphire_shovel": "Sapphire Shovel",
 
   "item.moreores.wood_pellet": "Wood Pellet",
 

@@ -21,7 +21,7 @@ public class ModBlocks {
     public static final Block RUBY_BLOCK = ModBlocks.registerBlock("ruby_block", new Block(AbstractBlock.Settings.create().mapColor(MapColor.DARK_RED).requiresTool().strength(5.0f, 5.0f).strength(5.0f)));
     public static final Block RADIANT_BLOCK = ModBlocks.registerBlock("radiant_block", new Block(AbstractBlock.Settings.create().mapColor(MapColor.BRIGHT_RED).requiresTool().strength(5.0f, 5.0f).strength(5.0f)));
     public static final Block SAPPHIRE_BLOCK = ModBlocks.registerBlock("sapphire_block", new Block(AbstractBlock.Settings.create().mapColor(MapColor.BLUE).requiresTool().strength(4.0f, 4.0f).strength(4.0f)));
-    public static final Block GREEN_SAPHIRE_BLOCK = ModBlocks.registerBlock("green_sapphire_block", new Block(AbstractBlock.Settings.create().mapColor(MapColor.GREEN).requiresTool().strength(4.0f, 4.0f).strength(4.0f)));
+    public static final Block GREEN_SAPPHIRE_BLOCK = ModBlocks.registerBlock("green_sapphire_block", new Block(AbstractBlock.Settings.create().mapColor(MapColor.GREEN).requiresTool().strength(4.0f, 4.0f).strength(4.0f)));
     public static final Block BLUE_GARNET_BLOCK = ModBlocks.registerBlock("blue_garnet_block", new Block(AbstractBlock.Settings.create().mapColor(MapColor.BLUE).requiresTool().strength(6.0f, 6.5f).strength(7.0f).sounds(BlockSoundGroup.AMETHYST_CLUSTER)));
     public static final Block PINK_GARNET_BLOCK = ModBlocks.registerBlock("pink_garnet_block", new Block(AbstractBlock.Settings.create().mapColor(MapColor.PINK).requiresTool().strength(6.0f, 6.5f).strength(7.0f).sounds(BlockSoundGroup.AMETHYST_CLUSTER)));
     public static final Block GREEN_GARNET_BLOCK = ModBlocks.registerBlock("green_garnet_block", new Block(AbstractBlock.Settings.create().mapColor(MapColor.PINK).requiresTool().strength(6.0f, 6.5f).strength(7.0f).sounds(BlockSoundGroup.AMETHYST_CLUSTER)));
@@ -43,6 +43,7 @@ public class ModBlocks {
     public static final Block PYROPE_ORE = ModBlocks.registerBlock("pyrope_ore", new ExperienceDroppingBlock(UniformIntProvider.create(3, 5), AbstractBlock.Settings.create().requiresTool()));
     public static final Block JADE_ORE = ModBlocks.registerBlock("jade_ore", new ExperienceDroppingBlock(UniformIntProvider.create(3, 5), AbstractBlock.Settings.create().requiresTool()));
 
+    public static final Block TOMATO_CROP = ModBlocks.registerBlock("tomato_crop", new TomatoCropBlock(AbstractBlock.Settings.create()));
 
     //Block Registry
     private static Block registerBlock(String name, Block block) {
