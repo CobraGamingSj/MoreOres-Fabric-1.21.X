@@ -22,7 +22,7 @@ public enum ModToolMaterials implements ToolMaterial
             Ingredient.ofItems(ModItems.GREEN_SAPPHIRE)),
     PYROPE(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 4609, 22.0f, 15.0f, 26, () ->
             Ingredient.ofItems(ModItems.PYROPE)),
-    RADIANT(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 5031, 25.0f, 24.0f, 30, () ->
+    RADIANT(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 5031, 25.0f, 72.0f, 30, () ->
             Ingredient.ofItems(ModItems.RADIANT)),
     AMETHYST(BlockTags.INCORRECT_FOR_IRON_TOOL, 301, 7.5f, 3.5f, 14, () ->
             Ingredient.ofItems(Items.AMETHYST_SHARD));

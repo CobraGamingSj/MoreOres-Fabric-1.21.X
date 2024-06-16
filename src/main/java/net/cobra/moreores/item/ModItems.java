@@ -37,13 +37,13 @@ public class ModItems {
 
 
     //Music Discs
-    public static final Item MUSIC_DISC_TASWELL = ModItems.registerItem("music_disc_taswell", new Item(new Item.Settings().jukeboxPlayable(ModJukeboxSongs.TASWELL)));
-    public static final Item MUSIC_DISC_DREITON = ModItems.registerItem("music_disc_dreiton", new Item(new Item.Settings().jukeboxPlayable(ModJukeboxSongs.DREITON)));
-    public static final Item MUSIC_DISC_BIOME_FEST = ModItems.registerItem("music_disc_biome_fest", new Item(new Item.Settings().jukeboxPlayable(ModJukeboxSongs.BIOME_FEST)));
-    public static final Item MUSIC_DISC_ARIA_MATH = ModItems.registerItem("music_disc_aria_math", new Item(new Item.Settings().jukeboxPlayable(ModJukeboxSongs.ARIA_MATH)));
-    public static final Item MUSIC_DISC_INFINITE_AMETHYST = ModItems.registerItem("music_disc_infinite_amethyst", new Item(new Item.Settings().jukeboxPlayable(ModJukeboxSongs.INFINITE_AMETHYST)));
-    public static final Item MUSIC_DISC_ENDLESS = ModItems.registerItem("music_disc_endless", new Item(new Item.Settings().jukeboxPlayable(ModJukeboxSongs.ENDLESS)));
-    public static final Item MUSIC_DISC_FEATHERFALL = ModItems.registerItem("music_disc_featherfall", new Item(new Item.Settings().jukeboxPlayable(ModJukeboxSongs.FEATHERFALL)));
+    public static final Item MUSIC_DISC_TASWELL = ModItems.registerItem("music_disc_taswell", new Item(new Item.Settings().jukeboxPlayable(ModJukeboxSongs.TASWELL).maxCount(1)));
+    public static final Item MUSIC_DISC_DREITON = ModItems.registerItem("music_disc_dreiton", new Item(new Item.Settings().jukeboxPlayable(ModJukeboxSongs.DREITON).maxCount(1)));
+    public static final Item MUSIC_DISC_BIOME_FEST = ModItems.registerItem("music_disc_biome_fest", new Item(new Item.Settings().jukeboxPlayable(ModJukeboxSongs.BIOME_FEST).maxCount(1)));
+    public static final Item MUSIC_DISC_ARIA_MATH = ModItems.registerItem("music_disc_aria_math", new Item(new Item.Settings().jukeboxPlayable(ModJukeboxSongs.ARIA_MATH).maxCount(1)));
+    public static final Item MUSIC_DISC_INFINITE_AMETHYST = ModItems.registerItem("music_disc_infinite_amethyst", new Item(new Item.Settings().jukeboxPlayable(ModJukeboxSongs.INFINITE_AMETHYST).maxCount(1)));
+    public static final Item MUSIC_DISC_ENDLESS = ModItems.registerItem("music_disc_endless", new Item(new Item.Settings().jukeboxPlayable(ModJukeboxSongs.ENDLESS).maxCount(1)));
+    public static final Item MUSIC_DISC_FEATHERFALL = ModItems.registerItem("music_disc_featherfall", new Item(new Item.Settings().jukeboxPlayable(ModJukeboxSongs.FEATHERFALL).maxCount(1)));
 
 
 //  Ruby Tools & Weapons
