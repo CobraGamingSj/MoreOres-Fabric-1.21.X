@@ -1,7 +1,6 @@
-package net.cobra.moreores.item;
+package net.moreores.item;
 
 import net.minecraft.client.gui.screen.Screen;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LightningEntity;
 import net.minecraft.entity.LivingEntity;
@@ -22,16 +21,24 @@ import net.minecraft.world.World;
 import java.util.List;
 
 public class EnergyIngotItem extends Item {
-    public EnergyIngotItem(Settings settings) {
+    public EnergyIngotItem(Item.Settings settings) {
         super(settings);
     }
     @Override
     public boolean hasGlint(ItemStack stack) {
-        return super.hasGlint(stack);
+        return true;
     }
 
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
+        World world = attacker.getWorld();
+
+        if(!world.isClient()) {
+            LightningEntity lightning = new LightningEntity(EntityType.LIGHTNING_BOLT, world);
+            lightning.setPos(target.getX(), target.getY(), target.getZ());
+            world.spawnEntity(lightning);
+        }
+
         target.addStatusEffect(new StatusEffectInstance(StatusEffects.POISON, 4800, 4));
         attacker.addStatusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 40, 4));
         return super.postHit(stack, target, attacker);
@@ -59,7 +66,7 @@ public class EnergyIngotItem extends Item {
         }
 
         if(!world.isClient() && hand == Hand.MAIN_HAND) {
-            world.playSound(null, user.getX(), user.getY(), user.getZ(), SoundEvents.BLOCK_BEACON_ACTIVATE, SoundCategory.PLAYERS, 1.0f, 1.0f);
+            world.playSound(null, user.getX(), user.getY(), user.getZ(), SoundEvents.BLOCK_BEACON_ACTIVATE, SoundCategory.PLAYERS, 2.0f, 1.0f);
         }
 
         return super.use(world, user, hand);
@@ -69,7 +76,7 @@ public class EnergyIngotItem extends Item {
     public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
         tooltip.add(Text.translatable("tooltip.moreores.radioactive_ingot.tooltip").formatted(Formatting.GRAY));
         if (Screen.hasShiftDown()) {
-            tooltip.add(Text.translatable("tooltip.moreores.energy_ingot.tooltip").formatted(Formatting.DARK_RED));
+            tooltip.add(Text.translatable("tooltip.moreores.energy_ingot.tooltip").formatted(Formatting.GRAY));
         }
         super.appendTooltip(stack, context, tooltip, type);
     }
